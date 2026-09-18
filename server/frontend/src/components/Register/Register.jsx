@@ -19,23 +19,23 @@ const Register = () => {
       <form onSubmit={register}>
         <div className="input-group">
           <label>Username:</label>
-          <input type="text" value={userName} onChange={(e) => setUserName(e.target.value)} required />
+          <input type="text" placeholder="Username" value={userName} onChange={(e) => setUserName(e.target.value)} required />
         </div>
         <div className="input-group">
           <label>First Name:</label>
-          <input type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
+          <input type="text" placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
         </div>
         <div className="input-group">
           <label>Last Name:</label>
-          <input type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
+          <input type="text" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
         </div>
         <div className="input-group">
           <label>Email:</label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
         </div>
         <div className="input-group">
           <label>Password:</label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         </div>
         <button type="submit" className="register-btn">Register</button>
       </form>
